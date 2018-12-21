@@ -1,0 +1,15 @@
+-   config:
+        name: "holland\u62A5\u544A\u662F\u5426\u5B8C\u6210"
+        request:
+            base_url: http://39.104.2.117:8763
+-   test:
+        name: "holland\u62A5\u544A\u662F\u5426\u5B8C\u6210"
+        request:
+            headers:
+                Authorization: Bearer ${login("15386426238")}
+            method: GET
+            url: /xuanke/holland/isFinishTest
+        validate:
+        -   check: status_code
+            comparator: equals
+            expected: 200

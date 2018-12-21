@@ -1,0 +1,26 @@
+-   config:
+        name: "holland\u62A5\u544A\u662F\u5426\u5B8C\u6210"
+        request:
+            base_url: ''
+            headers:
+                User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; LDN-AL20 Build/HUAWEILDN-AL20;
+                    wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126
+                    Mobile Safari/537.36 MicroMessenger/6.7.2.1321(0x26070232) NetType/WIFI
+                    Language/zh_CN
+                authorization: Bearer $token
+                charset: utf-8
+                content-type: application/json
+        variables:
+        -   token: ${login(15386426238)}
+-   test:
+        name: "holland\u62A5\u544A\u662F\u5426\u5B8C\u6210"
+        request:
+            method: GET
+            url: /xuanke/holland/isFinishTest
+        validate:
+        -   check: status_code
+            comparator: equals
+            expected: 200
+        -   check: content
+            comparator: equals
+            expected: true
