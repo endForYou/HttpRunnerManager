@@ -119,7 +119,7 @@ if DEBUG:
             'NAME': 'httprunner',  # 新建数据库名
             'USER': 'root',  # 数据库登录名
             'PASSWORD': '123456',  # 数据库登录密码
-            'HOST': '127.0.0.1',  # 数据库所在服务器ip地址
+            'HOST': 'localhost',  # 数据库所在服务器ip地址
             'PORT': '3307',  # 监听端口 默认3306即可
         }
     }
@@ -133,7 +133,7 @@ else:
             'NAME': 'httprunner',  # 新建数据库名
             'USER': 'root',  # 数据库登录名
             'PASSWORD': '123456',  # 数据库登录密码
-            'HOST': '127.0.0.1',  # 数据库所在服务器ip地址
+            'HOST': 'localhost',  # 数据库所在服务器ip地址
             'PORT': '3307',  # 监听端口 默认3306即可
         }
     }
