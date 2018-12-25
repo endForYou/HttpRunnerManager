@@ -1,6 +1,6 @@
 FROM python:3.6.6-stretch
 
-WORKDIR /usr/src/app
+WORKDIR /usr/local/src/app
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 COPY . .
