@@ -7,4 +7,4 @@ django-celery == 3.2.2
 flower == 0.9.2
 dwebsocket == 0.4.2
 paramiko == 2.4.1
-#HttpRunner == 1.5.8
+HttpRunner == 1.5.8
